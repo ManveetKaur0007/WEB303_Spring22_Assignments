@@ -12,7 +12,7 @@ $(document).ready(() => {
 })
 
 function getJSONData() {
-    $.getJSON("glitchTeam.json", (data) => {
+    $.getJSON("data/glitchTeam.json", (data) => {
       $.each(data.members, (index, value) => {
         $("div#glitch-team").append(`<h4>${value.fullname}</h2>`);
         $("div#glitch-team").append(`<h6>${value.position}</h5>`);
@@ -23,7 +23,7 @@ function getJSONData() {
 
 function ajaxData() {
     $.ajax({
-      url: "glitchTeam.json",
+      url: "data/glitchTeam.json",
       type: "GET",
       beforeSend: ()=> {
         $("div#glitch-team").html("Loading team...");
