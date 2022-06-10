@@ -25,9 +25,9 @@ function ajaxData() {
     $.ajax({
       url: "glitchTeam.json",
       type: "GET",
-      beforeSend: ()=> {
-        $("div#glitch-team").html("Loading team...");
-      },
+      //beforeSend: ()=> {
+        //$("div#glitch-team").html("Loading team...");
+      //},
       error: (error)=> {
         $("div#glitch-team").html("The content could not be retrieved.");
       },
