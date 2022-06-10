@@ -19,4 +19,27 @@ function getJSONData() {
         $("div#glitch-team").append(`<p>${value.shortbio}</p>`);
       });
     });
-  }
+}
+
+function ajaxData() {
+    $.ajax({
+      url: "glitchTeam.json",
+      type: "GET",
+      beforeSend: ()=> {
+        $("div#glitch-team").html("Loading team...");
+      },
+      error: (error)=> {
+        $("div#glitch-team").html("The content could not be retrieved.");
+      },
+      success: (data) => {
+        setTimeout(() => {
+          $("div#glitch-team").empty();
+          $.each(data.members, (index, value) => {
+            $("div#glitch-team").append(`<h4>${value.fullname}</h2>`);
+            $("div#glitch-team").append(`<h6>${value.position}</h5>`);
+            $("div#glitch-team").append(`<p>${value.shortbio}</p>`);
+          });
+        }, 3000);
+      }
+    })
+}
