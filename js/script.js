@@ -7,7 +7,7 @@
 // Section: 065
 
 $(document).ready(() => {
-    //getJSONData();
+    getJSONData();
     ajaxData();
 })
 
@@ -25,9 +25,9 @@ function ajaxData() {
     $.ajax({
       url: "glitchTeam.json",
       type: "GET",
-      //beforeSend: ()=> {
-        //$("div#glitch-team").html("Loading team...");
-      //},
+      beforeSend: ()=> {
+        $("div#glitch-team").html("Loading team...");
+      },
       error: (error)=> {
         $("div#glitch-team").html("The content could not be retrieved.");
       },
@@ -39,7 +39,7 @@ function ajaxData() {
             $("div#glitch-team").append(`<h6>${value.position}</h5>`);
             $("div#glitch-team").append(`<p>${value.shortbio}</p>`);
           });
-        }, 3000);
+        });
       }
     })
 }
