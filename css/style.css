@@ -10,9 +10,10 @@
     Section: 065
 */
 
+/*BODY S*/
 body{
-    margin: 0;
-    padding: 0;
+    margin: 15;
+    padding: 15;
 }
 
 /* Styling the buttons that will be used to open and close the accordion panel */
@@ -37,6 +38,18 @@ body{
 .panel {
     padding: 0 18px;
     background-color: white;
-    display: none;
+    max-height: 0;
+    transition: 0.2s ease-out ;
     overflow: hidden;
 }
+
+/*FOOTER*/
+footer{
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 4%;
+	border-top: 3px solid rgb(0, 0, 0);
+	font-family: Garamond, serif;
+	padding-bottom: 20px;
+}
+
