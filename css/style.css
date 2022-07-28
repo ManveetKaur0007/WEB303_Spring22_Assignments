@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 
+WEB303 Assignment 5
+Name: Manveet Kaur
+Student Id: W0782002
+Date: 2022/07/28
+Section: 065 
+*/
+/*MAIN STYLING*/
+html, body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 10px;
+    font-size: 17px;
+}
+
+/*HEADING STYLING*/
+h1{
+    padding: 5px 0px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px lightgray;
+}
+table, th, td {
+    border:1px solid black;
+}
+
+.name{
+    font-style: oblique;
+    background-color: blanchedalmond;
+}
+
