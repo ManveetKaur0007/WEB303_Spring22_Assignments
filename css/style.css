@@ -24,6 +24,7 @@ h1{
 }
 table, th, td {
     border:1px solid black;
+    padding: 5px;
 }
 
 .name{
@@ -31,3 +32,8 @@ table, th, td {
     background-color: blanchedalmond;
 }
 
+.head{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: aliceblue;
+}
