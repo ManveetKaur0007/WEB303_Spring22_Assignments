@@ -20,44 +20,51 @@
     
 <form>
     <label for="fname">SEARCH:</label><br>
-    <input type="text" id="fname" name="fname" value="Name"><br>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"><br>
 </form>
 <br>
-<table style="width:100%">
-    <tr>
+<table style="width:100%" id="myTable">
+    <tr class="header">
         <th>Full Name</th>
-        <td class="name">Jennifer Aniston</td>
-        <td class="name">Courteney Cox</td>
-        <td class="name">Matthew Perry</td>
-        <td class="name">Lisa Kudrow</td>
-        <td class="name">Matt LeBlanc</td>
-        <td class="name">David Schwimmer</td>
-    </tr>
-    <tr>
         <th>Brief Description of Their Role</th>
+        <th>Age</th>
+        <th>Date of birth</th> 
+    </tr>
+    <tr>
+        <td class="name">Jennifer Aniston</td>
         <td>Rachel Green</td>
-        <td>Monica Geller</td>
-        <td>Chandler Bing</td>
-        <td>Phoebe Buffay/Ursula Buffay</td>
-        <td>Joey Tribbiani</td>
-        <td>Ross Geller</td>
-    </tr>
-    <tr>
-        <th>Age</th>  
         <td>53</td>
-        <td>58</td>
-        <td>52</td>
-        <td>58</td>
-        <td>55</td>
-        <td>55</td>
+        <td>1969/02/11</td>        
+
     </tr>
     <tr>
-        <th>Date of birth</th>  
-        <td>1969/02/11</td>
+        <td class="name">Courteney Cox</td>
+        <td>Monica Geller</td>
+        <td>58</td>
         <td>1964/06/15</td>
-        <td>1969/08/19</td>
+    </tr>
+    <tr>
+        <td class="name">Matthew Perry</td>
+        <td>Chandler Bing</td>
+        <td>52</td>
+        <td>1969/08/19</td>       
+    </tr>
+    <tr>
+        <td class="name">Lisa Kudrow</td>
+        <td>Phoebe Buffay/Ursula Buffay</td>
+        <td>58</td>
         <td>1963/07/30</td>
+    </tr>
+    <tr>
+        <td class="name">Matt LeBlanc</td>
+        <td>Joey Tribbiani</td>
+        <td>55</td>
         <td>1967/07/25</td>
+    </tr>
+    <tr>
+        <td class="name">David Schwimmer</td>
+        <td>Ross Geller</td>
+        <td>55</td>
         <td>1966/11/02</td>
     </tr>
 </table>
